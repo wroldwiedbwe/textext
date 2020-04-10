@@ -1,0 +1,375 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>TexText for Inkscape 1.0 RC1 on Linux (Ubuntu 18.04) &mdash; TexText 1.0.0-dev.3 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../_static/logo.ico"/>
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="TexText on MacOS" href="macos.html" />
+    <link rel="prev" title="TexText for Inkscape 0.92.x on Linux" href="linux.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> TexText
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Installation</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="linux.html">TexText for <strong>Inkscape 0.92.x</strong> on Linux</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#"><strong>TexText for Inkscape 1.0 RC1</strong> on Linux (Ubuntu 18.04)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#preparation">Preparation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#download-and-install-the-inkscape-app-image-file">Download and install the <strong>Inkscape 1.0 RC1</strong> app image file</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#install-gui-library">Install GUI library</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#install-python-gtk3-bindings-recommended">Install Python GTK3 bindings (recommended)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#install-tkinter-not-recommended">Install Tkinter (not recommended)</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#download-and-install-textext">Download and install <strong>TexText for Inkscape 1.0 RC1</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#switching-back-to-inkscapeold">Switching back to <strong>Inkscape 0.92.x</strong></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="macos.html">TexText on MacOS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="windows.html">TexText for <strong>Inkscape 0.92.x</strong> on Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="windows-beta.html"><strong>TexText for Inkscape 1.0 RC1</strong> on Windows</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Usage</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../usage/gui.html">The <strong>TexText</strong> GUI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage/faq.html">Frequently Asked Questions (FAQ)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage/troubleshooting.html">Troubleshooting</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Credits</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../history.html">History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../authors.html">Authors</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Changelog</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../changelog.html">Change log</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">TexText</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li><strong>TexText for Inkscape 1.0 RC1</strong> on Linux (Ubuntu 18.04)</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/install/linux-beta.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="textext-on-linux-ubuntu-18-04">
+<span id="linux-beta-install"></span><h1><strong>TexText for Inkscape 1.0 RC1</strong> on Linux (Ubuntu 18.04)<a class="headerlink" href="#textext-on-linux-ubuntu-18-04" title="Permalink to this headline">¶</a></h1>
+<p>This guide explains how to install and use <strong>TexText for Inkscape 1.0 RC1</strong> together with <strong>Inkscape 1.0 RC1</strong> on a system
+on which also <strong>Inkscape 0.92.x</strong> is installed. Unfortunately, this approach <strong>works only with
+Ubuntu 18.04</strong>.</p>
+<div class="section" id="preparation">
+<h2>Preparation<a class="headerlink" href="#preparation" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic">
+<li><p class="first">Backup your existing Inkscape extension directory</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>cp -r ~/.config/inkscape/extensions ~/.config/inkscape/extensions.backup
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p class="first">Remove the old TexText installation:</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>rm -rf ~/.config/inkscape/extensions/textext
+rm ~/.config/inkscape/extensions/textext.inx
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+</ol>
+</div>
+<div class="section" id="download-and-install-the-inkscape-app-image-file">
+<h2>Download and install the <strong>Inkscape 1.0 RC1</strong> app image file<a class="headerlink" href="#download-and-install-the-inkscape-app-image-file" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic">
+<li><p class="first">Download <strong>Inkscape 1.0 RC1</strong> build 09960d6 from <a class="reference external" href="https://gitlab.com/inkscape/inkscape/-/jobs/505628089/artifacts/file/Inkscape-09960d6-x86_64.AppImage">Gitlab</a> or use the following command in a terminal:</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>wget -c https://gitlab.com/inkscape/inkscape/-/jobs/505628089/artifacts/raw/Inkscape-09960d6-x86_64.AppImage
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p class="first">Change into the directory into which you downloaded the AppImage. Then, make it executable:</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>chmod u+x Inkscape-09960d6-x86_64.AppImage
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p class="first">Extract the AppImage:</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>./Inkscape-09960d6-x86_64.AppImage --appimage-extract
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p class="first">Optional, if you are not in your home directory: Move the created directory <code class="docutils literal notranslate"><span class="pre">squashfs-root</span></code>
+into your home directory:</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mv squashfs-root ~
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+</ol>
+<p>After this operation <strong>Inkscape 1.0 RC1</strong> will reside in <code class="docutils literal notranslate"><span class="pre">~/squashfs-root/bin</span></code>. You can test it by
+executing</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>~/squashfs-root/bin/inkscape <span class="p">&amp;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="install-gui-library">
+<h2>Install GUI library<a class="headerlink" href="#install-gui-library" title="Permalink to this headline">¶</a></h2>
+<p>Install the Python bindings for the graphical user interface of
+<strong>TexText for Inkscape 1.0 RC1</strong>. You have two options: <code class="docutils literal notranslate"><span class="pre">GTK3</span></code> (recommended) or <code class="docutils literal notranslate"><span class="pre">Tkinter</span></code>.</p>
+<p>At first you need to discover the Python interpreter that is used by your
+Inkscape installation. Enter the following command in a terminal</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python --version
+</pre></div>
+</div>
+<p>Keep the returned major version number (Python <strong>2</strong> or Python <strong>3</strong>) in mind
+for the following instructions:</p>
+<div class="section" id="install-python-gtk3-bindings-recommended">
+<span id="linux-beta-install-gtk3"></span><h3>Install Python GTK3 bindings (recommended)<a class="headerlink" href="#install-python-gtk3-bindings-recommended" title="Permalink to this headline">¶</a></h3>
+<p>If your Inkscape installation runs <strong>Python 2</strong> you need the Python 2.x bindings for
+gobject-introspection libraries (<code class="docutils literal notranslate"><span class="pre">python-gi</span></code>), the GTK+ graphical user interface library
+(<code class="docutils literal notranslate"><span class="pre">gir1.2-gtk-3.0</span></code>) and the gir files for the GTK+ syntax highlighting widget
+(<code class="docutils literal notranslate"><span class="pre">gir1.2-gtksource-3.0</span></code>)</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo apt-get install python-gi gir1.2-gtk-3.0 gir1.2-gtksource-3.0
+</pre></div>
+</div>
+<p>If your Inkscape installation runs <strong>Python 3</strong> you need the Python 3 version of the
+gobject-introspection. The rest remains the same:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo apt-get install python3-gi gir1.2-gtk-3.0 gir1.2-gtksource-3.0
+</pre></div>
+</div>
+</div>
+<div class="section" id="install-tkinter-not-recommended">
+<span id="linux-beta-install-tkinter"></span><h3>Install Tkinter (not recommended)<a class="headerlink" href="#install-tkinter-not-recommended" title="Permalink to this headline">¶</a></h3>
+<p>Tkinter is functioning but has a limited interface compared to GTK version, so it’s not
+recommended. To use <code class="docutils literal notranslate"><span class="pre">Tkinter</span></code> install the  Python <code class="docutils literal notranslate"><span class="pre">tk</span></code> package.</p>
+<p>If your Inkscape installation runs <strong>Python 2</strong>:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo apt-get install python-tk
+</pre></div>
+</div>
+<p>If your Inkscape installation runs <strong>Python 3</strong>:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo apt-get install python3-tk
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="download-and-install-textext">
+<h2>Download and install <strong>TexText for Inkscape 1.0 RC1</strong><a class="headerlink" href="#download-and-install-textext" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic">
+<li><p class="first">Download the most recent <strong>preview</strong> package from <a class="reference external" href="https://github.com/textext/textext/releases/tag/1.0.0-dev.3#release">GitHub release page</a></p>
+</li>
+<li><p class="first">Extract the package and change into the created directory.</p>
+</li>
+<li><p class="first">Run <code class="code highlight bash docutils literal notranslate"><span class="pre">setup.py</span></code> with (<strong>Important!!</strong>) specification of the path to your <strong>Inkscape 1.0 RC1</strong> executable
+from your terminal:</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python3 setup.py --inkscape-executable ~/squashfs-root/bin/inkscape
+</pre></div>
+</div>
+<p>Setup will inform you if some of the prerequisites needed by <strong>TexText for Inkscape 1.0 RC1</strong> are missing.
+Install them.</p>
+<div class="admonition important">
+<p class="first admonition-title">Important</p>
+<p class="last">Compared to previous versions of <strong>TexText</strong> for <strong>Inkscape 0.92.x</strong> <strong>TexText for Inkscape 1.0 RC1</strong> does
+not need any conversion utilities like ghostscript, pstoedit or pdfsvg.</p>
+</div>
+</div></blockquote>
+</li>
+</ol>
+<p>Now you can launch <strong>Inkscape 1.0 RC1</strong> by typing <code class="code highlight bash docutils literal notranslate"><span class="pre">~/squashfs-root/bin/inkscape</span> <span class="p"><span class="pre">&amp;</span></span></code> and work
+with <strong>TexText for Inkscape 1.0 RC1</strong></p>
+<p>Please report any issues! Thank you!</p>
+</div>
+<div class="section" id="switching-back-to-inkscapeold">
+<h2>Switching back to <strong>Inkscape 0.92.x</strong><a class="headerlink" href="#switching-back-to-inkscapeold" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mv ~/.config/inkscape/extensions ~/.config/inkscape/extensions.beta
+cp -r ~/.config/inkscape/extensions.backup/ ~/.config/inkscape/extensions
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="macos.html" class="btn btn-neutral float-right" title="TexText on MacOS" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="linux.html" class="btn btn-neutral float-left" title="TexText for Inkscape 0.92.x on Linux" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Alexander Blinne, Brian Clarke, Florent Becker, Jan Winkler, Pit Garbe, Pauli Virtanen, Robert Szalai, Rafal Kolanski, Sergei Izmailov, Toru Araki, @veltsov, Vladislav Gavryusev
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

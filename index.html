@@ -1,0 +1,353 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>TexText - Re-editable LaTeX graphics for Inkscape &mdash; TexText 1.0.0-dev.3 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="_static/logo.ico"/>
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="TexText for Inkscape 0.92.x on Linux" href="install/linux.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="#" class="icon icon-home"> TexText
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Installation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="install/linux.html">TexText for <strong>Inkscape 0.92.x</strong> on Linux</a></li>
+<li class="toctree-l1"><a class="reference internal" href="install/linux-beta.html"><strong>TexText for Inkscape 1.0 RC1</strong> on Linux (Ubuntu 18.04)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="install/macos.html">TexText on MacOS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="install/windows.html">TexText for <strong>Inkscape 0.92.x</strong> on Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="install/windows-beta.html"><strong>TexText for Inkscape 1.0 RC1</strong> on Windows</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Usage</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="usage/gui.html">The <strong>TexText</strong> GUI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage/faq.html">Frequently Asked Questions (FAQ)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage/troubleshooting.html">Troubleshooting</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Credits</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="history.html">History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="authors.html">Authors</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Changelog</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">Change log</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">TexText</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="#">Docs</a> &raquo;</li>
+        
+      <li>TexText - Re-editable LaTeX graphics for Inkscape</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="textext-re-editable-latex-graphics-for-inkscape">
+<h1>TexText - Re-editable LaTeX graphics for Inkscape<a class="headerlink" href="#textext-re-editable-latex-graphics-for-inkscape" title="Permalink to this headline">¶</a></h1>
+<p>TexText is a Python extension for the vector graphics editor
+<a class="reference external" href="http://www.inkscape.org/">Inkscape</a> providing the possibility to add
+and <em>re-edit</em> LaTeX generated SVG elements to your drawing.</p>
+<div class="figure">
+<img alt="TexText dialog with Inkscape" src="_images/textext-with-inkscape.png" />
+</div>
+<div class="section" id="key-features">
+<h2>Key features<a class="headerlink" href="#key-features" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Compatible with upcoming release of Inkscape 1.0</li>
+<li>Windows/ Linux/ MacOS support</li>
+<li>LaTeX generated SVG elements can be re-edited later</li>
+<li>Multi-line editor with syntax highlighting (see <a class="reference internal" href="usage/gui.html#usage-dialog-overview"><span class="std std-ref">§</span></a>)</li>
+<li>Compilation with <strong>PdfLaTeX</strong>, <strong>XeLaTeX</strong> or <strong>LuaLaTex</strong> (see <a class="reference internal" href="usage/gui.html#usage-tex-compilers"><span class="std std-ref">§</span></a>)</li>
+<li>Interoperable scaling in TexText and Inkscape (see <a class="reference internal" href="usage/gui.html#usage-scaling"><span class="std std-ref">§</span></a>)</li>
+<li>Customizable TeX preamble (additional packages, parskip, parindent, etc.) (see <a class="reference internal" href="usage/gui.html#usage-preamble-file"><span class="std std-ref">§</span></a>)</li>
+<li>Colorization via TeX commands/ Inkscape is kept after re-editing (see <a class="reference internal" href="usage/gui.html#usage-colorization"><span class="std std-ref">§</span></a>)</li>
+<li>Alignment anchor of the produced output (see <a class="reference internal" href="usage/gui.html#usage-alignment"><span class="std std-ref">§</span></a>)</li>
+<li>Font size match with Inkscape text (see <a class="reference internal" href="usage/faq.html#faq-font-size"><span class="std std-ref">§</span></a>)</li>
+<li>Preview images  (see <a class="reference internal" href="usage/gui.html#usage-preview"><span class="std std-ref">§</span></a>)</li>
+<li>Compatibility with TexText down to version 0.4.x</li>
+</ul>
+<div class="toctree-wrapper compound" id="installation-toc">
+<p class="caption"><span class="caption-text">Installation</span><a class="headerlink" href="#installation-toc" title="Permalink to this toctree">¶</a></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="install/linux.html">TexText for <strong>Inkscape 0.92.x</strong> on Linux</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="install/linux.html#install-dependencies">Install dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install/linux.html#install-textext">Install TexText</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="install/linux-beta.html"><strong>TexText for Inkscape 1.0 RC1</strong> on Linux (Ubuntu 18.04)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="install/linux-beta.html#preparation">Preparation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install/linux-beta.html#download-and-install-the-inkscape-app-image-file">Download and install the <strong>Inkscape 1.0 RC1</strong> app image file</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install/linux-beta.html#install-gui-library">Install GUI library</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install/linux-beta.html#download-and-install-textext">Download and install <strong>TexText for Inkscape 1.0 RC1</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="install/linux-beta.html#switching-back-to-inkscapeold">Switching back to <strong>Inkscape 0.92.x</strong></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="install/macos.html">TexText on MacOS</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="install/macos.html#install-dependencies">Install dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install/macos.html#install-textext">Install TexText</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install/macos.html#information-with-respect-to-python-installation">Information with respect to Python installation</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="install/windows.html">TexText for <strong>Inkscape 0.92.x</strong> on Windows</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="install/windows.html#install-dependencies">Install dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install/windows.html#install-textext">Install TexText</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="install/windows-beta.html"><strong>TexText for Inkscape 1.0 RC1</strong> on Windows</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="install/windows-beta.html#installation-on-recent-windows-10-1703-systems">Installation on recent Windows 10 (&gt;= 1703) systems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install/windows-beta.html#installation-on-windows-7-windows-8-and-older-windows-10-system">Installation on Windows 7, Windows 8 and older Windows 10 system</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound" id="usage-toc">
+<p class="caption"><span class="caption-text">Usage</span><a class="headerlink" href="#usage-toc" title="Permalink to this toctree">¶</a></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="usage/gui.html">The <strong>TexText</strong> GUI</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="usage/gui.html#textext-extension-entry"><strong>TexText</strong> extension entry</a></li>
+<li class="toctree-l2"><a class="reference internal" href="usage/gui.html#dialog-overview">Dialog overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="usage/gui.html#available-tex-compilers">Available TeX compilers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="usage/gui.html#preamble-file">Preamble file</a></li>
+<li class="toctree-l2"><a class="reference internal" href="usage/gui.html#scaling-of-the-output">Scaling of the output</a></li>
+<li class="toctree-l2"><a class="reference internal" href="usage/gui.html#alignment-of-the-output">Alignment of the output</a></li>
+<li class="toctree-l2"><a class="reference internal" href="usage/gui.html#colorization-of-the-output">Colorization of the output</a></li>
+<li class="toctree-l2"><a class="reference internal" href="usage/gui.html#preview-button">Preview button</a></li>
+<li class="toctree-l2"><a class="reference internal" href="usage/gui.html#configuration-of-the-default-tex-math-environment">Configuration of the default TeX math-environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="usage/gui.html#selecting-the-shortcut-for-closing-the-textext-window">Selecting the shortcut for closing the <strong>TexText</strong> window</a></li>
+<li class="toctree-l2"><a class="reference internal" href="usage/gui.html#configuration-of-the-code-editor">Configuration of the code editor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="usage/gui.html#further-reading">Further reading</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="usage/faq.html">Frequently Asked Questions (FAQ)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="usage/faq.html#explicit-setting-of-font-size">Explicit setting of font size</a></li>
+<li class="toctree-l2"><a class="reference internal" href="usage/faq.html#selection-of-special-fonts">Selection of special fonts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="usage/faq.html#using-special-characters-like-german-umlaute-auo-etc">Using special characters like German Umlaute (äüö) etc.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="usage/faq.html#using-textext-with-older-inkscape-versions">Using TexText with older Inkscape versions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="usage/faq.html#extension-not-shown-in-the-inkscape-extension-menu">Extension not shown in the Inkscape Extension menu</a></li>
+<li class="toctree-l2"><a class="reference internal" href="usage/faq.html#windows-with-miktex-compilation-fails-with-empty-error-dialog">Windows with MiKTeX: Compilation fails with empty error dialog</a></li>
+<li class="toctree-l2"><a class="reference internal" href="usage/faq.html#set-inkscape-python-interpreter-to-python2">Set Inkscape python interpreter to Python2</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="usage/troubleshooting.html">Troubleshooting</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="usage/troubleshooting.html#latex-and-toolchain-errors">LaTeX and toolchain errors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="usage/troubleshooting.html#bugs-in-textext">Bugs in <strong>TexText</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="usage/troubleshooting.html#manual-use-of-the-toolchain">Manual use of the toolchain</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<p class="caption"><span class="caption-text">Credits</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="history.html">History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="authors.html">Authors</a></li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<p class="caption"><span class="caption-text">Changelog</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">Change log</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="changelog.html#version-1-0-0-dev-3-2020-04-10">Version 1.0.0-dev.3 (2020-04-10)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changelog.html#version-1-0-0-dev-2-2020-02-10">Version 1.0.0-dev.2 (2020-02-10)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changelog.html#version-1-0-0-dev-1-2019-12-17">Version 1.0.0-dev.1 (2019-12-17)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changelog.html#version-0-11-0-2019-06-22">Version 0.11.0 (2019-06-22)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changelog.html#version-0-10-2-2019-05-07">Version 0.10.2 (2019-05-07)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changelog.html#version-0-10-1-2019-04-17">Version 0.10.1 (2019-04-17)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changelog.html#version-0-10-0-2019-04-05">Version 0.10.0 (2019-04-05)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changelog.html#version-0-9-1-2018-12-27">Version 0.9.1 (2018-12-27)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changelog.html#version-0-9-0-2018-12-20">Version 0.9.0 (2018-12-20)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changelog.html#version-0-8-2-2018-12-12">Version 0.8.2 (2018-12-12)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changelog.html#version-0-8-1-2018-08-23">Version 0.8.1 (2018-08-23)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changelog.html#version-0-8-0-2018-08-21">Version 0.8.0 (2018-08-21)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changelog.html#version-0-7-3-2018-05-17">Version 0.7.3 (2018-05-17)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changelog.html#version-0-7-2-2018-04-06">Version 0.7.2 (2018-04-06)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changelog.html#version-0-7-1-2018-02-06">Version 0.7.1 (2018-02-06)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changelog.html#version-0-7-2017-12-15">Version 0.7 (2017-12-15)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changelog.html#version-0-6-1-2017-02-13">Version 0.6.1 (2017-02-13)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changelog.html#version-0-6-2017-02-01">Version 0.6 (2017-02-01)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changelog.html#version-0-5-2-2017-01-06">Version 0.5.2 (2017-01-06)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changelog.html#version-0-5-1-2016-10-10">Version 0.5.1 (2016-10-10)</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="install/linux.html" class="btn btn-neutral float-right" title="TexText for Inkscape 0.92.x on Linux" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Alexander Blinne, Brian Clarke, Florent Becker, Jan Winkler, Pit Garbe, Pauli Virtanen, Robert Szalai, Rafal Kolanski, Sergei Izmailov, Toru Araki, @veltsov, Vladislav Gavryusev
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

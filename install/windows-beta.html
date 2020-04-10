@@ -1,0 +1,412 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>TexText for Inkscape 1.0 RC1 on Windows &mdash; TexText 1.0.0-dev.3 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../_static/logo.ico"/>
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="The TexText GUI" href="../usage/gui.html" />
+    <link rel="prev" title="TexText for Inkscape 0.92.x on Windows" href="windows.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> TexText
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Installation</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="linux.html">TexText for <strong>Inkscape 0.92.x</strong> on Linux</a></li>
+<li class="toctree-l1"><a class="reference internal" href="linux-beta.html"><strong>TexText for Inkscape 1.0 RC1</strong> on Linux (Ubuntu 18.04)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="macos.html">TexText on MacOS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="windows.html">TexText for <strong>Inkscape 0.92.x</strong> on Windows</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#"><strong>TexText for Inkscape 1.0 RC1</strong> on Windows</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#installation-on-recent-windows-10-1703-systems">Installation on recent Windows 10 (&gt;= 1703) systems</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#preparation">Preparation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#download-and-install-the-inkscape-package">Download and install the <strong>Inkscape 1.0 RC1</strong> package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#download-and-install-textext">Download and install <strong>TexText for Inkscape 1.0 RC1</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#switching-back-to-inkscape-inkscapeold">Switching back to Inkscape <strong>Inkscape 0.92.x</strong></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#installation-on-windows-7-windows-8-and-older-windows-10-system">Installation on Windows 7, Windows 8 and older Windows 10 system</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id1">Preparation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id2">Download and install the <strong>Inkscape 1.0 RC1</strong> package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id3">Download and install <strong>TexText for Inkscape 1.0 RC1</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id4">Switching back to Inkscape <strong>Inkscape 0.92.x</strong></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Usage</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../usage/gui.html">The <strong>TexText</strong> GUI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage/faq.html">Frequently Asked Questions (FAQ)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage/troubleshooting.html">Troubleshooting</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Credits</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../history.html">History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../authors.html">Authors</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Changelog</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../changelog.html">Change log</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">TexText</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li><strong>TexText for Inkscape 1.0 RC1</strong> on Windows</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/install/windows-beta.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="textext-on-windows">
+<span id="windows-beta-install"></span><h1><strong>TexText for Inkscape 1.0 RC1</strong> on Windows<a class="headerlink" href="#textext-on-windows" title="Permalink to this headline">¶</a></h1>
+<p>This guide explains how to install and use <strong>TexText for Inkscape 1.0 RC1</strong> together with <strong>Inkscape 1.0 RC1</strong> on a system
+on which also <strong>Inkscape 0.92.x</strong> is installed.</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last"><strong>Inkscape 1.0 RC1</strong> builds for Windows are in fact nightly builds. Hence, operability of <strong>TexText for Inkscape 1.0 RC1</strong> might
+fail from one day to another. If you need a stable environment you are strongly encouraged
+to use <a class="reference internal" href="windows.html#windows-install"><span class="std std-ref">Inkscape 0.92</span></a>. Please report any issues.</p>
+</div>
+<div class="admonition important">
+<p class="first admonition-title">Important</p>
+<ol class="last arabic simple">
+<li>Compared to previous versions of <strong>TexText</strong> for <strong>Inkscape 0.92.x</strong> <strong>TexText for Inkscape 1.0 RC1</strong> does
+not need any conversion utilities like ghostscript, pstoedit or pdfsvg.
+Furthermore, the required Python bindungs for the GTK-GUI are already included
+in the windows version of <strong>Inkscape 1.0 RC1</strong>.</li>
+<li>Currently, GTKSourceView is not available in the Windows version of <strong>TexText for Inkscape 1.0 RC1</strong>,
+hence syntax highlighting is not enabled. An installer will be provided soon.</li>
+</ol>
+</div>
+<p>The procedure depends on the Windows version you
+are using</p>
+<blockquote>
+<div><ul class="simple">
+<li><a class="reference internal" href="#ttwin10"><span class="std std-ref">Installation on recent Windows 10 (&gt;= 1703) systems</span></a></li>
+<li><a class="reference internal" href="#ttwin78"><span class="std std-ref">Installation on Windows 7, Windows 8 and older Windows 10 system</span></a></li>
+</ul>
+</div></blockquote>
+<div class="section" id="installation-on-recent-windows-10-1703-systems">
+<span id="ttwin10"></span><h2>Installation on recent Windows 10 (&gt;= 1703) systems<a class="headerlink" href="#installation-on-recent-windows-10-1703-systems" title="Permalink to this headline">¶</a></h2>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Several of the following actions take place in a <strong>power shell window</strong>. To open a
+power shell from the Windows Explorer <code class="docutils literal notranslate"><span class="pre">right</span> <span class="pre">click</span></code> while pressing the
+<code class="docutils literal notranslate"><span class="pre">SHIFT</span></code> key in the directory you want to open it. Then select <code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">power</span> <span class="pre">shell</span> <span class="pre">window</span> <span class="pre">here</span></code>.
+The power shell opens which usually has a <strong>blue</strong> background.</p>
+</div>
+<div class="section" id="preparation">
+<h3>Preparation<a class="headerlink" href="#preparation" title="Permalink to this headline">¶</a></h3>
+<p>In a power shell window execute the following steps:</p>
+<ol class="arabic">
+<li><p class="first">Backup your existing Inkscape extension directory:</p>
+<blockquote>
+<div><div class="highlight-powershell notranslate"><div class="highlight"><pre><span></span><span class="n">cmd</span> <span class="p">/</span><span class="nb">r </span><span class="n">xcopy</span> <span class="p">/</span><span class="n">S</span> <span class="p">/</span><span class="n">E</span> <span class="p">/</span><span class="n">Y</span> <span class="k">%</span><span class="n">APPDATA</span><span class="p">%\</span><span class="n">inkscape</span><span class="p">\</span><span class="n">extensions</span> <span class="k">%</span><span class="n">APPDATA</span><span class="p">%\</span><span class="n">inkscape</span><span class="p">\</span><span class="n">extensions</span><span class="p">.</span><span class="n">backup</span><span class="p">\</span>
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p class="first">Remove the old TexText installation:</p>
+<blockquote>
+<div><div class="highlight-powershell notranslate"><div class="highlight"><pre><span></span><span class="n">cmd</span> <span class="p">/</span><span class="nb">r del </span><span class="p">/</span><span class="n">S</span> <span class="p">/</span><span class="n">Q</span> <span class="k">%</span><span class="n">APPDATA</span><span class="p">%\</span><span class="n">inkscape</span><span class="p">\</span><span class="n">extensions</span><span class="p">\</span><span class="n">textext</span>
+<span class="n">cmd</span> <span class="p">/</span><span class="nb">r del </span><span class="p">/</span><span class="n">Q</span> <span class="k">%</span><span class="n">APPDATA</span><span class="p">%\</span><span class="n">inkscape</span><span class="p">\</span><span class="n">extensions</span><span class="p">\</span><span class="n">textext</span><span class="p">.</span><span class="n">inx</span>
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+</ol>
+</div>
+<div class="section" id="download-and-install-the-inkscape-package">
+<h3>Download and install the <strong>Inkscape 1.0 RC1</strong> package<a class="headerlink" href="#download-and-install-the-inkscape-package" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>Download <strong>Inkscape 1.0 RC1</strong> from <a class="reference external" href="https://inkscape.org/release/1.0beta2/">https://inkscape.org/release/1.0beta2/</a>.</li>
+<li>Extract the zip package to a folder of your choice, e.g. <code class="docutils literal notranslate"><span class="pre">C:\InkscapeBeta</span></code>.</li>
+<li>Veryify that you are able to launch <strong>Inkscape 1.0 RC1</strong> by double clicking on <code class="docutils literal notranslate"><span class="pre">inkscape.exe</span></code>
+in <code class="docutils literal notranslate"><span class="pre">C:\InkscapeBeta\bin</span></code>.</li>
+</ol>
+</div>
+<div class="section" id="download-and-install-textext">
+<h3>Download and install <strong>TexText for Inkscape 1.0 RC1</strong><a class="headerlink" href="#download-and-install-textext" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic">
+<li><p class="first">Download the most recent <strong>preview</strong> package from <a class="reference external" href="https://github.com/textext/textext/releases/tag/1.0.0-dev.3#release">GitHub release page</a></p>
+</li>
+<li><p class="first">Extract the package and change into the created directory.</p>
+</li>
+<li><p class="first">In a power shell window run <code class="code highlight bash docutils literal notranslate"><span class="pre">setup_win.bat</span></code> with (<strong>Important!!</strong>) specification of the path to your
+<strong>Inkscape 1.0 RC1</strong> executable from your terminal:</p>
+<blockquote>
+<div><div class="highlight-powershell notranslate"><div class="highlight"><pre><span></span><span class="p">./</span><span class="n">setup_win</span><span class="p">.</span><span class="n">bat</span> <span class="p">-</span><span class="n">-inkscape-executable</span> <span class="s2">&quot;C:\InkscapeBeta\bin\inkscape.exe&quot;</span>
+</pre></div>
+</div>
+<p>Setup will inform you if some of the prerequisites needed by <strong>TexText for Inkscape 1.0 RC1</strong> are missing.
+Install them.</p>
+</div></blockquote>
+</li>
+</ol>
+<p>Now you can launch <strong>Inkscape 1.0 RC1</strong> by double clicking on <code class="docutils literal notranslate"><span class="pre">inkscape.exe</span></code> in <code class="docutils literal notranslate"><span class="pre">C:\InkscapeBeta</span></code>
+and work with <strong>TexText for Inkscape 1.0 RC1</strong></p>
+<p><strong>Please report any issues!</strong> Thank you!</p>
+</div>
+<div class="section" id="switching-back-to-inkscape-inkscapeold">
+<h3>Switching back to Inkscape <strong>Inkscape 0.92.x</strong><a class="headerlink" href="#switching-back-to-inkscape-inkscapeold" title="Permalink to this headline">¶</a></h3>
+<p>In a power shell window execute:</p>
+<div class="highlight-powershell notranslate"><div class="highlight"><pre><span></span><span class="n">cmd</span> <span class="p">/</span><span class="nb">r move </span><span class="p">/</span><span class="n">Y</span> <span class="k">%</span><span class="n">APPDATA</span><span class="p">%\</span><span class="n">inkscape</span><span class="p">\</span><span class="n">extensions</span> <span class="k">%</span><span class="n">APPDATA</span><span class="p">%\</span><span class="n">inkscape</span><span class="p">\</span><span class="n">extensions</span><span class="p">.</span><span class="n">beta</span><span class="p">\</span>
+<span class="n">cmd</span> <span class="p">/</span><span class="nb">r </span><span class="n">xcopy</span> <span class="p">/</span><span class="n">S</span> <span class="p">/</span><span class="n">E</span> <span class="p">/</span><span class="n">Y</span> <span class="k">%</span><span class="n">APPDATA</span><span class="p">%\</span><span class="n">inkscape</span><span class="p">\</span><span class="n">extensions</span><span class="p">.</span><span class="n">backup</span> <span class="k">%</span><span class="n">APPDATA</span><span class="p">%\</span><span class="n">inkscape</span><span class="p">\</span><span class="n">extensions</span><span class="p">\</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="installation-on-windows-7-windows-8-and-older-windows-10-system">
+<span id="ttwin78"></span><h2>Installation on Windows 7, Windows 8 and older Windows 10 system<a class="headerlink" href="#installation-on-windows-7-windows-8-and-older-windows-10-system" title="Permalink to this headline">¶</a></h2>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Several of the following actions take place in a <strong>command window</strong>. To open a
+command window from the Windows Explorer <code class="docutils literal notranslate"><span class="pre">right</span> <span class="pre">click</span></code> while pressing the
+<code class="docutils literal notranslate"><span class="pre">SHIFT</span></code> key in the directory you want to open it. Then select <code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">command</span> <span class="pre">window</span> <span class="pre">here</span></code>.
+The command window opens which usually has a <strong>black</strong> background.</p>
+</div>
+<div class="section" id="id1">
+<h3>Preparation<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<p>In a power shell/ command window execute the following steps:</p>
+<ol class="arabic">
+<li><p class="first">Backup your existing Inkscape extension directory:</p>
+<blockquote>
+<div><div class="highlight-winbatch notranslate"><div class="highlight"><pre><span></span>xcopy /S /E /Y <span class="nv">%APPDATA%</span>\inkscape\extensions <span class="nv">%APPDATA%</span>\inkscape\extensions.backup\
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p class="first">Remove the old TexText installation:</p>
+<blockquote>
+<div><div class="highlight-winbatch notranslate"><div class="highlight"><pre><span></span><span class="k">del</span> /S /Q <span class="nv">%APPDATA%</span>\inkscape\extensions\textext
+<span class="k">del</span> /Q <span class="nv">%APPDATA%</span>\inkscape\extensions\textext.inx
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+</ol>
+</div>
+<div class="section" id="id2">
+<h3>Download and install the <strong>Inkscape 1.0 RC1</strong> package<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>Download <strong>Inkscape 1.0 RC1</strong> from <a class="reference external" href="https://inkscape.org/release/1.0beta2/">https://inkscape.org/release/1.0beta2/</a>.</li>
+<li>Extract the zip package to a folder of your choice, e.g. <code class="docutils literal notranslate"><span class="pre">C:\InkscapeBeta</span></code>.</li>
+<li>Veryify that you are able to launch <strong>Inkscape 1.0 RC1</strong> by double clicking on <code class="docutils literal notranslate"><span class="pre">inkscape.exe</span></code>
+in <code class="docutils literal notranslate"><span class="pre">C:\InkscapeBeta\bin</span></code>.</li>
+</ol>
+</div>
+<div class="section" id="id3">
+<h3>Download and install <strong>TexText for Inkscape 1.0 RC1</strong><a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic">
+<li><p class="first">Download the most recent <strong>preview</strong> package from <a class="reference external" href="https://github.com/textext/textext/releases/tag/1.0.0-dev.3#release">GitHub release page</a></p>
+</li>
+<li><p class="first">Extract the package and change into the created directory.</p>
+</li>
+<li><p class="first">If you are on older Windows 10 systems, Windows 8, or Windows 7: In a command window run
+<code class="code highlight bash docutils literal notranslate"><span class="pre">setup_win.bat</span></code> with (<strong>Important!!</strong>) specification of the path to your <strong>Inkscape 1.0 RC1</strong> executable
+from your terminal:</p>
+<blockquote>
+<div><div class="highlight-winbatch notranslate"><div class="highlight"><pre><span></span>setup_win.bat --inkscape-executable <span class="s2">&quot;C:\InkscapeBeta\bin\inkscape.exe&quot;</span>
+</pre></div>
+</div>
+<p>Setup will inform you if some of the prerequisites needed by <strong>TexText for Inkscape 1.0 RC1</strong> are missing.
+Install them.</p>
+</div></blockquote>
+</li>
+</ol>
+<p>Now you can launch <strong>Inkscape 1.0 RC1</strong> by double clicking on <code class="docutils literal notranslate"><span class="pre">inkscape.exe</span></code> in <code class="docutils literal notranslate"><span class="pre">C:\InkscapeBeta</span></code>
+and work with <strong>TexText for Inkscape 1.0 RC1</strong></p>
+<p><strong>Please report any issues!</strong> Thank you!</p>
+</div>
+<div class="section" id="id4">
+<h3>Switching back to Inkscape <strong>Inkscape 0.92.x</strong><a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<p>In a command window execute:</p>
+<div class="highlight-winbatch notranslate"><div class="highlight"><pre><span></span><span class="k">move</span> /Y <span class="nv">%APPDATA%</span>\inkscape\extensions <span class="nv">%APPDATA%</span>\inkscape\extensions.beta\
+xcopy /S /E /Y <span class="nv">%APPDATA%</span>\inkscape\extensions.backup <span class="nv">%APPDATA%</span>\inkscape\extensions\
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../usage/gui.html" class="btn btn-neutral float-right" title="The TexText GUI" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="windows.html" class="btn btn-neutral float-left" title="TexText for Inkscape 0.92.x on Windows" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Alexander Blinne, Brian Clarke, Florent Becker, Jan Winkler, Pit Garbe, Pauli Virtanen, Robert Szalai, Rafal Kolanski, Sergei Izmailov, Toru Araki, @veltsov, Vladislav Gavryusev
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
